@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Wallet, Power, Copy, Check, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
+import { Button } from "./ui/button";
 
 interface WalletConnectProps {
   onConnect: (address: string) => void;
@@ -47,6 +47,8 @@ const WalletConnect = ({
         <Wallet className="w-4 h-4 mr-2" />
         {connecting ? "Connecting..." : "Connect Wallet"}
       </Button>
+
+    
     );
   }
 
